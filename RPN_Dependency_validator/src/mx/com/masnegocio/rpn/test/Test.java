@@ -1,0 +1,18 @@
+package mx.com.masnegocio.rpn.test;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Stack;
+
+import mx.com.masnegocio.rpn.engine.RPN;
+import mx.com.masnegocio.rpn.engine.JSONdecoder.OperationMember;
+
+public class Test {
+	public static void main(String[] args) throws Exception {
+		String JSON = "ew0KICJkZXBlbmRlbmN5IiA6IFsNCiAgew0KICAgInR5cGUiIDogIk9wZXJhbmQiLA0KICAgInZhbHVlIiA6ICJSIg0KICB9LA0KICB7DQogICAidHlwZSIgOiAiT3BlcmFuZCIsDQogICAidmFsdWUiIDogIlIiDQogIH0sDQogIHsNCiAgICJ0eXBlIiA6ICJPcGVyYXRvciIsDQogICAidmFsdWUiIDogIkVRVUFMUyINCiAgfSwNCiAgew0KICAgInR5cGUiIDogIk9wZXJhbmQiLA0KICAgInZhbHVlIiA6ICJISURFX0NPTlRST0wiDQogIH0sDQogIHsNCiAgICJ0eXBlIiA6ICJPcGVyYW5kIiwNCiAgICJ2YWx1ZSIgOiAiMiINCiAgfSwNCiAgew0KICAgInR5cGUiIDogIk9wZXJhbmQiLA0KICAgInZhbHVlIiA6ICIxIg0KICB9LA0KICB7DQogICAidHlwZSIgOiAiT3BlcmF0b3IiLA0KICAgInZhbHVlIiA6ICJESUZGRVJFTlQiDQogIH0sDQogIHsNCiAgICJ0eXBlIiA6ICJPcGVyYW5kIiwNCiAgICJ2YWx1ZSIgOiAiU0hPV19DT05UUk9MX0RJU0FCTEVEIg0KICB9LA0KICB7DQogICAidHlwZSIgOiAiT3BlcmFuZCIsDQogICAidmFsdWUiIDogIlNIT1dfQ09OVFJPTF9FTkFCTEVEIg0KICB9LA0KICB7DQogICAidHlwZSIgOiAiT3BlcmF0b3IiLA0KICAgInZhbHVlIiA6ICJJRiINCiAgfSwNCiAgew0KICAgInR5cGUiIDogIk9wZXJhdG9yIiwNCiAgICJ2YWx1ZSIgOiAiSUYiDQogIH0NCiBdDQp9DQo=";
+		RPN rpn = new RPN(JSON);
+		Stack<OperationMember> stack = rpn.Resolve();
+		
+		System.out.println(stack.pop());
+	}
+}

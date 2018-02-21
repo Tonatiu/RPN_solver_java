@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/yahuitl.trejo/Documents/RPN/RPN_Dependency_validator/lib/EasyREST.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yahuitl.trejo/Documents/RPN/RPN_Dependency_validator/lib/Encoding.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yahuitl.trejo/Documents/RPN/RPN_Dependency_validator/lib/JPATH.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yahuitl.trejo/Documents/RPN/RPN_Dependency_validator/lib/JSON.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
